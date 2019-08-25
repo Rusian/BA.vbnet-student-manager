@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8919B7EC-09D6-4FB7-B303-2E874BEE3B04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WinAppUser01.My.MyApplication</StartupObject>
+    <RootNamespace>WinAppUser01</RootNamespace>
+    <AssemblyName>WinAppUser01</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WinAppUser01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WinAppUser01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddStudent.Designer.vb">
+      <DependentUpon>frmAddStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCourseCenter.Designer.vb">
+      <DependentUpon>frmCourseCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCourseCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonCenter.Designer.vb">
+      <DependentUpon>frmPersonCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchClass.Designer.vb">
+      <DependentUpon>frmSearchClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchCourse.Designer.vb">
+      <DependentUpon>frmSearchCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchGrade.Designer.vb">
+      <DependentUpon>frmSearchGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCourse.Designer.vb">
+      <DependentUpon>frmSelectCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentInfoAdd.Designer.vb">
+      <DependentUpon>frmStudentInfoAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentInfoAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentInfoSearch.Designer.vb">
+      <DependentUpon>frmStudentInfoSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentInfoSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTMain.Designer.vb">
+      <DependentUpon>frmTMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTSearchGrade.Designer.vb">
+      <DependentUpon>frmTSearchGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTSearchGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PasswordChange.Designer.vb">
+      <DependentUpon>PasswordChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddStudent.resx">
+      <DependentUpon>frmAddStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCourseCenter.resx">
+      <DependentUpon>frmCourseCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonCenter.resx">
+      <DependentUpon>frmPersonCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchClass.resx">
+      <DependentUpon>frmSearchClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchCourse.resx">
+      <DependentUpon>frmSearchCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchGrade.resx">
+      <DependentUpon>frmSearchGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCourse.resx">
+      <DependentUpon>frmSelectCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentInfoAdd.resx">
+      <DependentUpon>frmStudentInfoAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentInfoSearch.resx">
+      <DependentUpon>frmStudentInfoSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTMain.resx">
+      <DependentUpon>frmTMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTSearchGrade.resx">
+      <DependentUpon>frmTSearchGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordChange.resx">
+      <DependentUpon>PasswordChange.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentBLL\StudentBLL.vbproj">
+      <Project>{ea9225e7-02cf-44a5-8677-6bdcab6ecd6d}</Project>
+      <Name>StudentBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentModel\StudentModel.vbproj">
+      <Project>{cab826db-a2bc-45b2-9032-1ea1974b072c}</Project>
+      <Name>StudentModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
